@@ -130,7 +130,7 @@ regressor.fit(X_train.reshape(-1, 1), y_train)
 y_ = regressor.predict(X_test.reshape(-1, 1))
 
 mae_sk = mean_absolute_error(y_test, y_) 
-#print(mae_sk)
+print(mae_sk)
      
 plt.scatter(X_test, y_test, c = 'red')
 plt.plot(X_test, y_, c = 'blue')   
